@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A313a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YKActionSheetViewController">
+            <connections>
+                <outlet property="actionSheetView" destination="aj4-rf-kuT" id="Z2p-Ks-e4O"/>
+                <outlet property="actionSheetViewBottomConstraint" destination="1Em-SG-4gm" id="kbp-za-S7W"/>
+                <outlet property="actionSheetViewHeightConstraint" destination="nXW-Da-H6w" id="iY2-VF-VDd"/>
+                <outlet property="backgroundButton" destination="GXy-0p-DeK" id="EC0-3T-bkf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" alpha="0.40000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GXy-0p-DeK">
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <action selector="buttonClickAction:" destination="-1" eventType="touchUpInside" id="Gb2-xZ-hqA"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aj4-rf-kuT" customClass="YKActionSheetView">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="nXW-Da-H6w"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="aj4-rf-kuT" secondAttribute="bottom" constant="-50" id="1Em-SG-4gm"/>
+                <constraint firstAttribute="trailing" secondItem="aj4-rf-kuT" secondAttribute="trailing" id="1Xn-Nc-H8c"/>
+                <constraint firstAttribute="bottom" secondItem="GXy-0p-DeK" secondAttribute="bottom" id="87w-Q8-vON"/>
+                <constraint firstItem="GXy-0p-DeK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="MTw-IB-uY5"/>
+                <constraint firstAttribute="trailing" secondItem="GXy-0p-DeK" secondAttribute="trailing" id="gvN-oW-dlK"/>
+                <constraint firstItem="aj4-rf-kuT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ryd-I0-gh4"/>
+                <constraint firstItem="GXy-0p-DeK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="si6-SD-ywD"/>
+            </constraints>
+            <point key="canvasLocation" x="36.5" y="53.5"/>
+        </view>
+    </objects>
+</document>
